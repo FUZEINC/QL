@@ -8,8 +8,8 @@ function send_to_sqs($params){
     //Connect to SQS
 	$client = SqsClient::factory(array(	    
 	    'credentials' => array (
-	                'key'    => 'AKIAIQO3SCQQK5QY2ZGQ', //use your AWS key here
-	                'secret' => 'ziBRZyue4aCJzliMEv1oPva3BYikRMNcL/WCmmrc' //use your AWS secret here
+	                'key'    => 'my-access-key', //use your AWS key here
+	                'secret' => 'my-secret-key' //use your AWS secret here
 	    ),
 	    'region'  => 'us-east-1', //replace it with your region
 	    'version' => '2012-11-05'
