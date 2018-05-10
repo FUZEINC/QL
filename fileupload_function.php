@@ -10,8 +10,8 @@ function fileupload($name,$tmp,$folder,$bucket="test-sightsupply-to-quiet")
 	if(strlen($name) > 0)
 	{
 		//AWS access info
-		if (!defined('awsAccessKey')) define('awsAccessKey', 'AKIAIQO3SCQQK5QY2ZGQ');
-		if (!defined('awsSecretKey')) define('awsSecretKey', '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');
+		if (!defined('awsAccessKey')) define('awsAccessKey', 'my-access-key');
+		if (!defined('awsSecretKey')) define('awsSecretKey', 'my-secret-key');
 		
 		// Set Amazon s3 credentials
 		$client = S3Client::factory(
